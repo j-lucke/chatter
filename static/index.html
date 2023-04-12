@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+    <div id="header">
+      <div id="title">CHATTER</div>
+      <ul id="links">
+        <li id="login">click HERE to join!</li>
+        <form id="form-login" action="">
+          <input id="input-login" autocomplete="off" /><button>join</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="list-link">hide chatters</div>
+    <div id="list-container">
+      <ul id="list"></ul>
+    </div>
+
+    <ul id="messages"></ul>
+    
+    <form id="form" action="">
+      <input id="input" autocomplete="off" /><button>Send</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+
+  </body>
+</html>
