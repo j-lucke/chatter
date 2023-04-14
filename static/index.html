@@ -17,15 +17,15 @@
       </div>
     </div>
 
-    <div id="list-link">hide chatters</div>
-    <div id="list-container">
+    <div id="list-link">all</div>
+    <div id="list-container" style="display: none;">
       <ul id="list"></ul>
     </div>
 
-    <ul id="messages"></ul>
+    <ul class="message-board" id="messages-all"></ul>
     
     <form id="form" action="">
-      <input id="input" autocomplete="off" /><button>Send</button>
+      <input id="input" autocomplete="off" /><button id="send">Send</button>
     </form>
 
     <script src="/socket.io/socket.io.js"></script>
